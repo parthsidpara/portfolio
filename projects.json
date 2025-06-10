@@ -21,7 +21,7 @@
         },
         {
             "title": "100xPrompts",
-            "description": "Chrome extension that calculates the total duration of a YouTube playlist. This helps users quickly understand how long the entire playlist will take to watch without needing to manually add up the individual video durations.",
+            "description": "AI prompt library, enhancer, and Chrome extension built with React, TailwindCSS, and Framer Motion.",
             "technologies": ["React", "Node.js", "Firebase", "Tailwind CSS", "Gemini API"],
             "links": [
                 {"label": "Website Code", "url": "https://github.com/parthsidpara/100xPrompts-website"},
@@ -77,7 +77,7 @@
                 {"label": "GitHub", "url": "https://github.com/parthsidpara/lcd-simulation"},
                 {"label": "Live Demo", "url": "https://parthsidpara.github.io/lcd-simulation/"}
             ],
-            "image": "https://private-user-images.githubusercontent.com/143103116/453448070-acdd34a7-75b4-4c1e-bc61-405ac8661275.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk1NjYzNDAsIm5iZiI6MTc0OTU2NjA0MCwicGF0aCI6Ii8xNDMxMDMxMTYvNDUzNDQ4MDcwLWFjZGQzNGE3LTc1YjQtNGMxZS1iYzYxLTQwNWFjODY2MTI3NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMFQxNDM0MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05M2U2YmFlY2FlYjYwNzQ5M2ZlMGZiZTY3N2Q0ZDI5NDNjZjdjYTBmNGQ1NWY1MDJjZmYxM2IyY2ViZWI5MzRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ue2Y0zADEipqcdbPvraqWVhQ2BSFu0IUDoYf0mkNEo0"
+            "image": null
         }
     ]
 }
