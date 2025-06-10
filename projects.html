@@ -35,41 +35,9 @@
         </header>
 
         <section id="all-projects" class="container">
-            <h2>Featured Projects</h2>
-            <div class="project">
-                <h3>YouTube Playlist duration counter</h3>
-                <p>Chrome extension that calculates the total duration of a YouTube playlist. This helps users quickly understand how long the entire playlist will take to watch without needing to manually add up the individual video durations.</p>
-                <div class="project-tech">
-                    <span>Technologies: JavaScript, Chrome API</span>
-                </div>
-                <a href="https://github.com/parthsidpara/yt-playlist-duration-counter" class="btn">GitHub</a>
-                <a href="https://chromewebstore.google.com/detail/youtube-playlist-duration/fedfbbadjofeckdejipdhoogehgdnmil" class="btn">Download(webstore)</a>
-            </div>
-
-            <div class="project">
-                <h3>Syllabus PDF to Markdown Converter</h3>
-                <p>A user-friendly desktop application that converts VIT theory syllabus PDFs into structured Markdown files, making it easier to manage course materials.</p>
-                <div class="project-tech">
-                    <span>Technologies: Python, PyQt</span>
-                </div>
-                <a href="https://github.com/parthsidpara/syllabus-markdown" class="btn">GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>LCD simulation</h3>
-                <p>A simulation of 2*16 LCD grid that helps understand how LCD displays work at a basic level.</p>
-                <div class="project-tech">
-                    <span>Technologies: HTML, CSS, JavaScript</span>
-                </div>
-                <a href="https://github.com/parthsidpara/lcd-simulation?tab=readme-ov-file" class="btn">GitHub</a>
-                <a href="https://parthsidpara.github.io/lcd-simulation/" class="btn">Live</a>
-            </div>
-
-            <h2>Other Projects</h2>
-            <!-- More projects -->
-            <div class="project">
-                <h3>Other Projects</h3>
-                <p>Coming soon..</p>
+            <h2>My Projects</h2>
+            <div id="projects-container">
+                <!-- Projects will be loaded here dynamically -->
             </div>
         </section>
 
@@ -78,6 +46,49 @@
         </footer>
     </div>
 
+    <script>
+        // Function to load projects from JSON file
+        async function loadProjects() {
+            try {
+                const response = await fetch('projects.json');
+                const data = await response.json();
+                const projectsContainer = document.getElementById('projects-container');
+                
+                data.projects.forEach(project => {
+                    const projectDiv = document.createElement('div');
+                    projectDiv.className = 'project';
+                    
+                    let imageHtml = '';
+                    if (project.image) {
+                        imageHtml = `
+                            <div class="project-image">
+                                <img src="${project.image}" alt="${project.title}">
+                            </div>
+                        `;
+                    }
+
+                    projectDiv.innerHTML = `
+                        ${imageHtml}
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <div class="project-tech">
+                            <span>Technologies: ${project.technologies.join(', ')}</span>
+                        </div>
+                        <div class="project-links">
+                            ${(project.links || []).map(link => `<a href="${link.url}" class="btn" style="margin-right: 5px;" target="_blank">${link.label}</a>`).join('')}
+                        </div>
+                    `;
+                    
+                    projectsContainer.appendChild(projectDiv);
+                });
+            } catch (error) {
+                console.error('Error loading projects:', error);
+            }
+        }
+
+        // Load projects when the page loads
+        document.addEventListener('DOMContentLoaded', loadProjects);
+    </script>
     <script src="script.js"></script>
 </body>
 </html> 

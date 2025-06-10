@@ -1,0 +1,83 @@
+{
+    "projects": [
+        {
+            "title": "ezOD",
+            "description": "Chrome extension that calculates the total duration of a YouTube playlist. This helps users quickly understand how long the entire playlist will take to watch without needing to manually add up the individual video durations.",
+            "technologies": ["JavaScript", "Chrome API"],
+            "links": [
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/ezOD"},
+                {"label": "Web Store", "url": "https://chromewebstore.google.com/detail/ezod/hcjjembkbilgkojhpapcffibhandgokh?utm_source=item-share-cp"}
+            ],
+            "image": "https://lh3.googleusercontent.com/HnGi69DWJUFxPdDIRik62CqMGpcLsdOU2OaZPpBNBOkB2Qqdfn90qWaXYLoyg40B_rzT3Wf5TYuzcwDRikOkwkoJPg=s1600-w1600-h1000"
+        },
+        {
+            "title": "QuadTasks",
+            "description": "QuadTask is an Obsidian plugin that allows you to create eisenhower matrix tasks and manage them efficiently.",
+            "technologies": ["TypeScript", "Obsidian API"],
+            "links": [
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/QuadTasks"}
+            ],
+            "image": null
+        },
+        {
+            "title": "100xPrompts",
+            "description": "Chrome extension that calculates the total duration of a YouTube playlist. This helps users quickly understand how long the entire playlist will take to watch without needing to manually add up the individual video durations.",
+            "technologies": ["React", "Node.js", "Firebase", "Tailwind CSS", "Gemini API"],
+            "links": [
+                {"label": "Website Code", "url": "https://github.com/parthsidpara/100xPrompts-website"},
+                {"label": "Extension Code", "url": "https://github.com/parthsidpara/100xPrompts-extension"},
+                {"label": "Demo Video", "url": "https://www.youtube.com/watch?v=LKYEYkQpbzQ"}
+            ],
+            "image": null
+        },
+        {
+            "title": "Algorithm Visualizer",
+            "description": "A project created as the final project for the course 'Data Structures and Algorithms', where I implemented various algorithms and data structures and created a visualizer for them.",
+            "technologies": ["JavaScript", "CSS", "HTML"],
+            "links": [
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/dsa-v"},
+                {"label": "Live Demo", "url": "https://parthsidpara.github.io/dsa-v/"}            
+            ],
+            "image": null
+        },
+        {
+            "title": "YouTube Playlist duration counter",
+            "description": "Chrome extension that calculates the total duration of a YouTube playlist. This helps users quickly understand how long the entire playlist will take to watch without needing to manually add up the individual video durations.",
+            "technologies": ["JavaScript", "Chrome API"],
+            "links": [
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/yt-playlist-duration-counter"},
+                {"label": "Web Store", "url": "https://chromewebstore.google.com/detail/youtube-playlist-duration/fedfbbadjofeckdejipdhoogehgdnmil"}
+            ],
+            "image": null
+        },
+        {
+            "title": "YT Pause On Switch",
+            "description": "YTPauseOnSwitch automatically pauses YouTube videos when you switch tabs or windows and resumes playback when you return.",
+            "technologies": ["JavaScript", "Chrome API"],
+            "links": [
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/YTPauseOnSwitch"},
+                {"label": "Web Store", "url": "https://chromewebstore.google.com/detail/ytpauseonswitch/hnegdljhjabdgdbnmohedmeoaloehogj"}
+            ],
+            "image": null
+        },
+        {
+            "title": "Syllabus PDF to Markdown Converter",
+            "description": "A user-friendly desktop application that converts VIT theory syllabus PDFs into structured Markdown files, making it easier to manage course materials.",
+            "technologies": ["Python", "Tkinter"],
+            "links": [
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/syllabus-markdown"}
+            ],
+            "image": "https://github.com/parthsidpara/syllabus-markdown/raw/master/img/mainUi.png"
+        },
+        {
+            "title": "LCD simulation",
+            "description": "A simulation of 2*16 LCD grid that helps understand how LCD displays work at a basic level.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "links": [
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/lcd-simulation"},
+                {"label": "Live Demo", "url": "https://parthsidpara.github.io/lcd-simulation/"}
+            ],
+            "image": "https://private-user-images.githubusercontent.com/143103116/453448070-acdd34a7-75b4-4c1e-bc61-405ac8661275.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk1NjYzNDAsIm5iZiI6MTc0OTU2NjA0MCwicGF0aCI6Ii8xNDMxMDMxMTYvNDUzNDQ4MDcwLWFjZGQzNGE3LTc1YjQtNGMxZS1iYzYxLTQwNWFjODY2MTI3NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMFQxNDM0MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05M2U2YmFlY2FlYjYwNzQ5M2ZlMGZiZTY3N2Q0ZDI5NDNjZjdjYTBmNGQ1NWY1MDJjZmYxM2IyY2ViZWI5MzRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ue2Y0zADEipqcdbPvraqWVhQ2BSFu0IUDoYf0mkNEo0"
+        }
+    ]
+}

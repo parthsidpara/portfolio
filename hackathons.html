@@ -31,68 +31,16 @@
                 <div class="header-icon">
                     <i class="fas fa-trophy highlight" style="font-size: 3.5rem; margin-bottom: 20px;"></i>
                 </div>
-                <h1>My <span class="highlight">Hackathon</span> Journey</h1>
-                <p>Experiences, Learnings, and Adventures in Hackathons</p>
+                <h1>My <span class="highlight">Hackathons</span></h1>
+                <p>A showcase of my hackathon experiences and achievements</p>
             </div>
         </header>
 
         <section id="hackathons" class="container">
-            <!-- Hackathon -->
-            <article class="hackathon-entry">
-                <h2>Scribble Pad Hackathon</h2>
-                <div class="hackathon-meta">
-                    <span><i class="far fa-calendar-alt"></i> November 2024</span>
-                    <span><i class="fas fa-map-marker-alt"></i> VIT Chennai</span>
-                    <span><i class="fas fa-users"></i> 3 members</span>
-                </div>
-
-                <div class="two-column">
-                    <div class="left-column">
-                        <div class="section">
-                            <h3>Project Overview</h3>
-                            <p>Snake Game with an innovative twist on the classic Snake game, where players can control the snake using voice commands and hand gesture in addition to traditional keyboard controls.</p>
-                        </div>
-
-                        <div class="section">
-                            <h3>Tech Stack Used</h3>
-                            <ul class="skills-list">
-                                <li><i class="fab fa-html5"></i> HTML</li>
-                                <li><i class="fab fa-css3-alt"></i> CSS</li>
-                                <li><i class="fab fa-js"></i> JS</li>
-                            </ul>
-                        </div>
-
-                        <div class="section">
-                            <h3>Achievements</h3>
-                            <p>Selected in top 10 teams</p>
-                        </div>
-                    </div>
-
-                    <div class="right-column">
-                        <div class="section">
-                            <h3>Key Learnings</h3>
-                            <ul class="bullet-list">
-                                <li>HTML Canvas</li>
-                                <li>Scribble pad (platform)</li>
-                                <li>Gesture detection </li>
-                            </ul>
-                        </div>
-
-                        <div class="section">
-                            <h3>Challenges Faced</h3>
-                            <p>Integrating gesture detection and voice control with the snake game.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/parthsidpara/scribbler-hackathon-project" class="btn-h">Project Repository</a>
-                    <a href="https://parthsidpara.github.io/scribbler-hackathon-project/" class="btn-h">Demo</a>
-                </div>
-            </article>
-
-
-            
+            <h2>Hackathon Experiences</h2>
+            <div id="hackathons-container">
+                <!-- Hackathon cards will be loaded here dynamically -->
+            </div>
         </section>
 
         <footer>
@@ -100,6 +48,48 @@
         </footer>
     </div>
 
+    <script>
+    async function loadHackathons() {
+        try {
+            const response = await fetch('hackathons.json');
+            const data = await response.json();
+            const hackathonsContainer = document.getElementById('hackathons-container');
+            data.hackathons.forEach(hackathon => {
+                const card = document.createElement('div');
+                card.className = 'hackathon-card';
+                card.innerHTML = `
+                ${hackathon.image ? `<div class="hackathon-card-image">
+                        <img src="${hackathon.image}" alt="${hackathon.title}">
+                    </div>` : ''}
+                    <div class="hackathon-card-content">
+                        <h3>${hackathon.title}
+                          ${hackathon.achievement ? `<span class="hackathon-card-achievement"><i class='fas fa-trophy'></i> ${hackathon.achievement}</span>` : ''}
+                        </h3>
+                        <div class="hackathon-card-meta">
+                            <span><i class='far fa-calendar-alt'></i> ${hackathon.date || ''}</span>
+                            <span><i class='fas fa-map-marker-alt'></i> ${hackathon.location || ''}</span>
+                            <span><i class='fas fa-users'></i> ${hackathon.team || ''}</span>
+                        </div>
+                        <p class="hackathon-card-desc">${hackathon.description || ''}</p>
+                        <div class="hackathon-card-tech">
+                            <span>Tech:</span>
+                            <ul>
+                                ${(hackathon.technologies || []).map(tech => `<li>${tech}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="hackathon-card-links">
+                            ${(hackathon.links || []).map(link => `<a href="${link.url}" class="btn-h" target="_blank">${link.label}</a>`).join('')}
+                        </div>
+                    </div>
+                `;
+                hackathonsContainer.appendChild(card);
+            });
+        } catch (error) {
+            console.error('Error loading hackathons:', error);
+        }
+    }
+    document.addEventListener('DOMContentLoaded', loadHackathons);
+    </script>
     <script src="script.js"></script>
 </body>
 

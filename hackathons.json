@@ -1,0 +1,68 @@
+{
+  "hackathons": [
+    {
+      "title": "Scribble Pad Hackathon",
+      "date": "Nov 2024",
+      "location": "VIT Chennai",
+      "team": "3 members",
+      "description": "Built a Snake Game with an innovative twist on the classic Snake game, where players can control the snake using voice commands and hand gesture in addition to traditional keyboard controls.",
+      "technologies": ["HTML", "CSS", "JS", "Scribbler NB"],
+      "achievement": "Top 10 Finalist",
+      "image": null,
+      "links": [
+        {"label": "Project Repo", "url": "https://github.com/parthsidpara/scribbler-hackathon-project"},
+        {"label": "Demo", "url": "https://parthsidpara.github.io/scribbler-hackathon-project/"}
+      ]
+    },
+    {
+      "title": "DeFy25",
+      "date": "January 2025",
+      "location": "MG Auditorium, VIT Chennai",
+      "team": "5 members",
+      "description": "Developed a blockchain based voting system for the college elections.",
+      "technologies": ["Ganache", "Solidity"],
+      "achievement": null,
+      "image": null,
+      "links": [
+      ]
+    },
+    {
+        "title": "Mission: Data Impossible",
+        "date": "February 2025",
+        "location": "Kamraj Auditorium, VIT Chennai",
+        "team": "3 members",
+        "description": "Learned about data analysis and filtering, and also attended a CTF event focused on those topics.",
+        "technologies": ["Python", "NumPy"],
+        "achievement": null,
+        "image": null,
+        "links": [
+        ]
+      },
+      {
+          "title": "BIS Medihack 1.0",
+          "date": "March 2025",
+          "location": "VIT Chennai",
+          "team": "4 members",
+          "description": "Developed an AI-powered medical consultancy platform featuring appointment scheduling, live chat, and video conferencing with doctors.",
+          "technologies": ["React", "Node.js", "Web Sockets"],
+          "achievement": null,
+          "image": null,
+          "links": [
+          ]
+        },
+        {
+            "title": "Summer of Scribbling 2025",
+            "date": "June 2025",
+            "location": "Online",
+            "team": "3 members",
+            "description": "Developed MapItFlow to convert syllabus PDFs into interactive, AI-personalized learning roadmaps using HTML, CSS, JS, PDF.JS, and GeminiAPI. It features real-time progress tracking, intelligent study guidance, flexible data management, and a modern, responsive Tailwind CSS interface.",
+            "technologies": ["JavaScript", "TailwindCSS", "HTML", "PDF.JS", "Scribbler NB"],
+            "achievement": "2nd Prize",
+            "image": null,
+            "links": [
+                {"label": "Notebook", "url": "https://app.scribbler.live/?jsnb=github:parthsidpara/summer-scribbler-hackathon/MapItFlow.jsnb"},
+                {"label": "GitHub", "url": "https://github.com/parthsidpara/summer-scribbler-hackathon"}
+            ]
+          }
+  ]
+} 
