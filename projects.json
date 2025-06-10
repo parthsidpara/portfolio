@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "ezOD",
-            "description": "Chrome extension that calculates the total duration of a YouTube playlist. This helps users quickly understand how long the entire playlist will take to watch without needing to manually add up the individual video durations.",
+            "description": "A Chrome extension for vitc students to quickly check their On-Duty (OD) attendance. It scans your VTOP attendance records and generates a summary table with OD counts.",
             "technologies": ["JavaScript", "Chrome API"],
             "links": [
                 {"label": "GitHub", "url": "https://github.com/parthsidpara/ezOD"},
